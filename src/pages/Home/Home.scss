@@ -1,0 +1,132 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #f7fafc;
+
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px;
+
+    .hero-section {
+      background-color: #1a56db; // Tom azul vibrante do Figma
+      color: #ffffff;
+      text-align: left; // Alinhado à esquerda como no protótipo
+      padding: 40px 36px;
+      border-radius: 16px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+      .hero-badge {
+        display: inline-block;
+        background-color: #f6ad55; // Laranja/Amarelo do botão no Figma
+        color: #1a202c; // Texto escuro para dar contraste e acessibilidade
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: none;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        color: #ffffff;
+        margin-bottom: 16px;
+        font-weight: 800;
+        line-height: 1.2;
+        max-width: 650px;
+      }
+
+      p {
+        color: #e2e8f0;
+        font-size: 0.95rem;
+        max-width: 580px;
+        margin: 0;
+        line-height: 1.5;
+      }
+    }
+
+    .categorias-section {
+      margin-bottom: 40px;
+
+      .categorias-titulo {
+        margin-bottom: 16px;
+
+        h3 {
+          font-size: 1.1rem;
+          color: #1a202c;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 0.85rem;
+          color: #4a5568;
+        }
+      }
+
+      .categorias-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+
+        .categoria-card {
+          background-color: #ffffff;
+          border: 2px solid #e2e8f0;
+          border-radius: 12px;
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          color: #2d3748;
+          font-weight: 600;
+          font-size: 0.9rem;
+
+          &:hover {
+            border-color: #1a56db;
+            background-color: #ebf8ff;
+          }
+
+          &.ativa {
+            border-color: #1a56db;
+            background-color: #1a56db;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .vagas-section {
+      .vagas-header-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        h2 {
+          font-size: 1.5rem;
+          color: #1a202c;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .contador-vagas {
+          background-color: #ebf8ff;
+          color: #1a56db;
+          padding: 6px 12px;
+          border-radius: 20px;
+          font-size: 0.85rem;
+          font-weight: 600;
+        }
+      }
+
+      .vagas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 24px;
+      }
+    }
+  }
+}

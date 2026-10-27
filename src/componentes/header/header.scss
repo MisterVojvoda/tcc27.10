@@ -1,0 +1,38 @@
+.principal {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .marc {
+      h1 {
+        font-size: 24px;
+        color: #2b6cb0;
+        span { color: #3182ce; font-weight: bold; }
+      }
+      p { font-size: 12px; color: #718096; }
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+        color: #2d3748;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        &:hover { color: #2b6cb0; }
+      }
+    }
+  }
+}
